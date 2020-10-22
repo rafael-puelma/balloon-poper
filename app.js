@@ -6,7 +6,7 @@ document.addEventListener("mouseover", (event) => {
     event.target.classList.add("popped"); // när hover över ballonger, lägger den till calssen "popped" i classen balloon
 
     const poppedCount = document.querySelectorAll(".balloon.popped").length; // registrera hur många som är popped
-    balloonCound = document.querySelectorAll(".balloon").length;
+    const balloonCound = document.querySelectorAll(".balloon").length;
 
     if (poppedCount === balloonCound) {
       const balloons = document.querySelector(".balloons");
